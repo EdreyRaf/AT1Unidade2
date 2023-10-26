@@ -1,0 +1,14 @@
+#include<stdio.h>
+int num = 35;
+int *ptr;
+int main (){
+	ptr = &num;
+	printf("O ponteiro ptr armazena o endereço %d, que", ptr);
+	printf("\npor sua vez, armazena o valor %d", *ptr);
+	*ptr = 100;
+	printf("\n\nAgora o ponteiro ptr armazena o endereço %d, que", ptr);
+	printf("\npor sua vez, armazena o valor %d", *ptr);
+	
+	
+	return 0;
+	}
