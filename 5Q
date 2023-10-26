@@ -1,0 +1,18 @@
+#include<stdio.h>
+float Media(float a, float b){
+float not1 = a;
+float not2 = b;
+float media = (not1+not2)/2;
+return(media);
+}
+int main (){
+	float a, b;
+	printf("Digite a note 1: ", a);
+	scanf("%f", &a);
+	printf("Digite a note 2: ", b);
+	scanf("%f", &b);
+	float media = Media (a, b);
+	printf("A media eh %f", media);
+	
+	return 0;
+	} 	
