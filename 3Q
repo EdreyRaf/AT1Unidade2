@@ -1,0 +1,12 @@
+#include<stdio.h>
+float x;
+float *p_x;
+
+int main (){
+	p_x = &x;
+	printf("Digite um numero: ");
+	scanf("%f", &x);
+	printf("%f", (*p_x)/5);
+	
+	return 0;
+	}
