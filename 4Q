@@ -1,0 +1,15 @@
+#include<stdio.h>
+float x, y;
+float *p_x, *p_y;
+
+int main (){
+	p_x = &x;
+	p_y = &y;
+	printf("Digite a nota 1: ");
+	scanf("%f", &x);
+	printf("Digite a nota 2: ");
+	scanf("%f", &y);
+	printf("\nA media das notas %.2f + %.2f  = %.2f", x, y, ((*p_x)+(*p_y))/2);
+	
+	return 0;
+	}
